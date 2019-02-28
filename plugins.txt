@@ -1,0 +1,5 @@
+gitlab-plugin
+blueocean
+redmine
+backup
+git-changelog
