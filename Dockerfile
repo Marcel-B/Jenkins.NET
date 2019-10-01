@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.166
+FROM jenkins/jenkins:lts
 
 USER root
 
@@ -17,6 +17,7 @@ RUN chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 RUN chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 RUN apt-get update
 RUN apt-get install dotnet-sdk-2.2 -y
+RUN apt-get install dotnet-sdk-3.0 -y
 
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
 RUN apt-get install -y nodejs
