@@ -3,3 +3,5 @@ blueocean
 redmine
 backup
 git-changelog
+GitHub+Branch+Source+Plugin
+
